@@ -1,14 +1,14 @@
-name: Configs Tests
+name: Subgraph Tests
 
 on:
   push:
     branches:
       - main
-      - develop
   pull_request:
     paths:
-      - 'configs/**'
-      - '.github/workflows/configs-*.yml'
+      - 'contracts/**'
+      - 'subgraph/**'
+      - '.github/workflows/test-subgraph.yml'
   workflow_dispatch:
   workflow_call:
 
@@ -19,7 +19,7 @@ jobs:
     runs-on: 'ubuntu-latest'
     defaults:
       run:
-        working-directory: configs
+        working-directory: subgraph
     steps:
       - name: 'Check out the repo'
         uses: 'actions/checkout@v3'
@@ -33,8 +33,5 @@ jobs:
       - name: 'Install the dependencies'
         run: 'yarn install --frozen-lockfile'
 
-      - name: 'Build the configs'
-        run: 'yarn build'
-
-      - name: 'Test the configs'
+      - name: 'Test the subgraph'
         run: 'yarn test >> $GITHUB_STEP_SUMMARY'

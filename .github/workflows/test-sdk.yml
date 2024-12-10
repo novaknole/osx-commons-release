@@ -1,14 +1,13 @@
-name: Artifacts build
+name: SDK Tests
 
 on:
   push:
     branches:
       - main
-      - develop
   pull_request:
     paths:
-      - 'artifacts/**'
-      - '.github/workflows/artifacts-*.yml'
+      - 'sdk/**'
+      - '.github/workflows/test-sdk.yml'
   workflow_dispatch:
   workflow_call:
 
@@ -17,9 +16,11 @@ jobs:
     uses: ./.github/workflows/formatting-linting.yml
   tests:
     runs-on: 'ubuntu-latest'
+    secrets:
+      PUB_PINATA_JWT: ${{ secrets.PUB_PINATA_JWT }}
     defaults:
       run:
-        working-directory: artifacts
+        working-directory: sdk
     steps:
       - name: 'Check out the repo'
         uses: 'actions/checkout@v3'
@@ -33,5 +34,8 @@ jobs:
       - name: 'Install the dependencies'
         run: 'yarn install --frozen-lockfile'
 
-      - name: 'Build the artifacts'
+      - name: 'Build the sdk'
         run: 'yarn build'
+
+      - name: 'Test the sdk'
+        run: 'yarn test >> $GITHUB_STEP_SUMMARY'

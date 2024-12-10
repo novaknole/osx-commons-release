@@ -1,14 +1,13 @@
-name: SDK Tests
+name: Configs Tests
 
 on:
   push:
     branches:
       - main
-      - develop
   pull_request:
     paths:
-      - 'sdk/**'
-      - '.github/workflows/sdk-*.yml'
+      - 'configs/**'
+      - '.github/workflows/test-configs.yml'
   workflow_dispatch:
   workflow_call:
 
@@ -17,11 +16,9 @@ jobs:
     uses: ./.github/workflows/formatting-linting.yml
   tests:
     runs-on: 'ubuntu-latest'
-    secrets:
-      PUB_PINATA_JWT: ${{ secrets.PUB_PINATA_JWT }}
     defaults:
       run:
-        working-directory: sdk
+        working-directory: configs
     steps:
       - name: 'Check out the repo'
         uses: 'actions/checkout@v3'
@@ -35,8 +32,8 @@ jobs:
       - name: 'Install the dependencies'
         run: 'yarn install --frozen-lockfile'
 
-      - name: 'Build the sdk'
+      - name: 'Build the configs'
         run: 'yarn build'
 
-      - name: 'Test the sdk'
+      - name: 'Test the configs'
         run: 'yarn test >> $GITHUB_STEP_SUMMARY'
