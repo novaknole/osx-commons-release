@@ -1,11 +1,11 @@
-const {execSync} = require('child_process');
+const { execSync } = require('child_process');
 const fs = require('fs-extra');
 const path = require('path');
 
-const {publish, getChangelogEntry} = require('@changesets/release-utils');
+const { publish, getChangelogEntry } = require('@changesets/release-utils');
 
-module.exports = async ({github, context, core}) => {
-  const {published, publishedPackages} = await publish({
+module.exports = async ({ github, context, core }) => {
+  const { published, publishedPackages } = await publish({
     script: 'yarn release',
   });
 
@@ -51,7 +51,7 @@ module.exports = async ({github, context, core}) => {
       owner: context.repo.owner,
       repo: context.repo.repo,
       // `contracts or sdk or artifacts or configs`
-      name: process.env.REF_NAME.split('-')[1],
+      name: `${process.env.REF_NAME.split('-')[1]} - ${version}`,
       tag_name: tagName,
       target_commitish: github.ref_name,
       body: changelogEntry.content,
