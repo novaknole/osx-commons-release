@@ -1,5 +1,12 @@
 # Aragon OSx Commons Configs
 
+## 0.7.0
+
+### Minor Changes
+
+- 1fe92ef: some more changes for another release candidate
+- beb0634: configs changed 1
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
