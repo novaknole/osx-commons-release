@@ -2,10 +2,12 @@
 
 set -euo pipefail
 
-organization=@aragon
+# TODO: change later
+
+organization=@glagh
 
 # Define the mapping as an associative array
-mapping="contracts:osx-commons-contracts configs:osx-commons-configs sdk:osx-commons-sdk artifacts:osx-dev-artifacts"
+mapping="contracts:commons-contracts configs:commons-configs sdk:commons-sdk artifacts:dev-artifacts"
 
 package="${REF_NAME##*-}"
 
