@@ -1,154 +1,0 @@
-Script started on Fri Dec 13 14:39:03 2024
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hcclear[?2004l
-[H[2J[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hclear     clearsudo nginx -s start[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hcclear[?2004l
-[H[2J[1m[7m%[27m[1m[0m                                                                        cclear[?2004l
-[H[2J[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hclear     clearsudo nginx -s start[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgior./test.sh[?2004l
-sdk
-Looping through keys and values:
-oee
-changeset version --ignore @glagh/commons-contracts --ignore @glagh/commons-configs --ignore @glagh/dev-artifacts
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004h../test.sh[?2004l
-sdk
-Looping through keys and values:
-oee
-changeset version --ignore @glagh/commons-contracts --ignore @glagh/commons-configs --ignore @glagh/dev-artifacts
-./test.sh: line 33: changeset: command not found
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004h./test.sh[?2004l
-sdk
-Looping through keys and values:
-oee
-npx changeset version --ignore @glagh/commons-contracts --ignore @glagh/commons-configs --ignore @glagh/dev-artifacts
-[1G[0K⠙[1G[0K🦋  All fil../test.sh[?2004l
-sdk
-Looping through keys and values:
-oee
-changeset version --ignore @glagh/commons-contracts --ignore @glagh/commons-configs --ignore @glagh/dev-artifacts
-./test.sh: line 33: changeset: command not found
-[1m[7m%[27m[1m[0m                                                                      ggit stash[?2004l
-Saved working directory and index state WIP on feature/blax: beb0634 some feature
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hcc;ea  c clear[?2004l
-[H[2J[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hppwd[?2004l
-/Users/giorgilagidze/Desktop/osx-commons
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hggit [?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hnnpx changeset [?2004l
-[1G[0K⠙[1G[0K[?25l[?25h[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4munchanged packages[24m[39m
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m [36m[4m@glagh/dev-artifacts[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [ changeset [?2004l
-[1G[0K⠙[1G[0K[?25l[?25h[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4munchanged packages[24m[39m
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m [36m[4m@glagh/dev-artifacts[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m [36m[4m@glagh/commons-configs[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39mangeset [?2004l
-[1G[0K⠙[1G[0K[?25l[?25h[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4munchanged packages[24m[39m
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m [36m[4m@glagh/dev-artifacts[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m [36m[4m@glagh/commons-configs[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m 2B[2K[F[2K[F[2K[1G[32m🦋 [39m [1mWhich packages should have a [31mmajor[39m bump?[22m [2m·[22m [35mNo items were selected[39m[21D
-[?25h[?25l[?25h[36m🦋 [39m [1mWhich packages should have a [32mminor[39m bump?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4mall packages[24m[39m
-  [2m[90m◯[39m[22m [1m@glagh/commons-sdk[22m@[1m0.0.1-alpha.11[22m[2A[51G[2B[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages should have a [32mminor[39m bump?[22m [2m…[22m 
-[32m◉[39m [36m[4mall packages[24m[39m
-  [32m◉[39m [1m@glagh/commons-sdk[22m@[1m0.0.1-alpha.11[22m[2A[51G[2B[2K[F[2K[F[2K[1G[32m🦋 [39m [1mWhich packages should have a [32mminor[39m bump?[22m [2m·[22m [36m@glagh/commons-sdk[39m[17D
-[?25h🦋  Please enter a summary for this change (this will be in the changelogs).
-🦋  [90m  (submit empty line to open external editor)[39m
-[?25l[36m🦋 [39m [1mSummary[22m [2m›[22m [46m[30m[30m [39m[30m[39m[49m[1D[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m g[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m gr[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m gre[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m grea[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m gre[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m gr[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m g[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m [46m[30m[30m [39m[30m[39m[49m[1D[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m s[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sd[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk [46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk c[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk ch[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk cha[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk chan[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk chang[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk change[46m[30m[30m [39m[30m[39m[49m[?25l[2K[1G[36m🦋 [39m [1mSummary[22m [2m›[22m sdk changes[46m[30m[30m [39m[30m[39m[49m[2K[1G[32m🦋 [39m [1mSummary[22m [2m·[22m [32msdk changes[39m
-[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h[?25h🦋  
-🦋  === Summary of changesets ===
-🦋  [1m[32mminor[39m[22m:  @glagh/commons-sdk
-🦋  
-🦋  Note: All dependents of these packages that will be incompatible with the new version will be [91mpatch bumped[39m when this changeset is applied.
-🦋  
-[?25l[36m🦋 [39m [1mIs this your desired changeset?[22m [2m(Y/n)[22m [2m›[22m [36mtrue[39m[4D  [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004h../test.sh[?2004l
-sdk
-Looping through keys and values:
-oee
-changeset version --ignore @glagh/commons-contracts --ignore @glagh/commons-configs --ignore @glagh/dev-artifacts
-./test.sh: line 33: changeset: command not found
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004h./test.sh[?2004l
-sdk
-Looping through keys and values:
-oee
-npx changeset version --ignore @glagh/commons-contracts --ignore @glagh/commons-configs --ignore @glagh/dev-artifacts
-[1G[0K⠙[1G[0K🦋  All files have been updated. Review them and commit at your leisure
-[1G[0K⠙[1G[0K[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hggit stash[?2004l
-Saved working directory and index state WIP on feature/blax: beb0634 some feature
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hcc;ea  c clear[?2004l
-[H[2J[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hppwd[?2004l
-/Users/giorgilagidze/Desktop/osx-commons
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hggit [?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                             [0m[27m[24m[Jgiorgilagidze@Giorgis-MacBook-Pro osx-commons % [K[?2004hnnpx changeset [?2004l
-[1G[0K⠙[1G[0K[?25l[?25h[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4munchanged packages[24m[39m
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m [36m[4m@glagh/dev-artifacts[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m [36m[4m@glagh/commons-configs[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m [36m[4m@glagh/commons-contracts[24m[39m
-  [2m[90m◯[39m[22m @glagh/commons-sdk[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [2m[90m◯[39m[22m [36m[4m@glagh/commons-sdk[24m[39m[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages would you like to include?[22m [2m…[22m 
-[2m[90m◯[39m[22m unchanged packages
-  [2m[90m◯[39m[22m @glagh/dev-artifacts
-  [2m[90m◯[39m[22m @glagh/commons-configs
-  [2m[90m◯[39m[22m @glagh/commons-contracts
-  [32m◉[39m [36m[4m@glagh/commons-sdk[24m[39m[5A[52G[5B[2K[F[2K[F[2K[F[2K[F[2K[F[2K[1G[32m🦋 [39m [1mWhich packages would you like to include?[22m [2m·[22m [36m@glagh/commons-sdk[39m[17D
-[?25h[?25l[?25h[36m🦋 [39m [1mWhich packages should have a [31mmajor[39m bump?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4mall packages[24m[39m
-  [2m[90m◯[39m[22m [1m@glagh/commons-sdk[22m@[1m0.0.1-alpha.11[22m[2A[51G[2B[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages should have a [31mmajor[39m bump?[22m [2m…[22m 
-[32m◉[39m [36m[4mall packages[24m[39m
-  [32m◉[39m [1m@glagh/commons-sdk[22m@[1m0.0.1-alpha.11[22m[2A[51G[2B[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages should have a [31mmajor[39m bump?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4mall packages[24m[39m
-  [2m[90m◯[39m[22m [1m@glagh/commons-sdk[22m@[1m0.0.1-alpha.11[22m[2A[51G[2B[2K[F[2K[F[2K[1G[32m🦋 [39m [1mWhich packages should have a [31mmajor[39m bump?[22m [2m·[22m [35mNo items were selected[39m[21D
-[?25h[?25l[?25h[36m🦋 [39m [1mWhich packages should have a [32mminor[39m bump?[22m [2m…[22m 
-[2m[90m◯[39m[22m [36m[4mall packages[24m[39m
-  [2m[90m◯[39m[22m [1m@glagh/commons-sdk[22m@[1m0.0.1-alpha.11[22m[2A[51G[2B[2K[F[2K[F[2K[1G[36m🦋 [39m [1mWhich packages should have a [32mminor[39m bump?[22m [2m…[22m 
-[32m◉[39m [36m[4mall packages[24m[39m
-  [32m◉[39m [1m@gla
