@@ -10,16 +10,15 @@ on:
       package:
         type: choice
         description: Which package to release(NOTE:Used only when triggered from `main` branch. When triggered from `release-*` branch, it grabs the package folder name from the branch name)
-        options: 
-          - "contracts"
-          - "configs"
-          - "sdk"
-          - "artifacts"
+        options:
+          - 'contracts'
+          - 'configs'
+          - 'sdk'
+          - 'artifacts'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  
   state:
     name: Check state
     permissions:
@@ -86,7 +85,7 @@ jobs:
               workflow_id: 'release-cycle.yml',
               ref: '${{ steps.start.outputs.branch }}',
             });
-  
+
   changesets:
     runs-on: ubuntu-latest
     name: Update PR to release
@@ -105,10 +104,10 @@ jobs:
         uses: changesets/action@v1
         with:
           version: yarn run version
-          # When a PR is merged to `release-*`, changesets/action uses `ref_name` which 
-          # is `<pr_number>/merge` and not the source branch name. Such a PR causes 
-          # changeset's new PR creation instead of updating the current one. 
-          # For push or workflow dispatch events, `base_ref` is undefined 
+          # When a PR is merged to `release-*`, changesets/action uses `ref_name` which
+          # is `<pr_number>/merge` and not the source branch name. Such a PR causes
+          # changeset's new PR creation instead of updating the current one.
+          # For push or workflow dispatch events, `base_ref` is undefined
           # and `branch` results in `ref_name` which is where push/dispatch happened.
           branch: ${{ github.base_ref || github.ref_name }}
         env:
@@ -142,7 +141,7 @@ jobs:
               workflow_id: 'release-cycle.yml',
               ref: '${{ github.ref_name }}'
             });
-  
+
   publish:
     runs-on: ubuntu-latest
     name: Publish to npm and create a release/tag
@@ -169,7 +168,7 @@ jobs:
           REF_NAME: ${{ github.base_ref }}
         with:
           script: await require('./scripts/publish.js')({ github, context })
-  
+
   merge:
     needs: [state, publish]
     name: Create PR back to main
