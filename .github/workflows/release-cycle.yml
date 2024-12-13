@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Set up environment
         uses: ./.github/actions/setup
-      - run: bash scripts/git-user-config.sh
+      - run: bash scripts/release/git-user-config.sh
       - id: state
         name: Get state
         uses: actions/github-script@v7
@@ -39,7 +39,7 @@ jobs:
           BASE_REF: ${{ github.base_ref }}
         with:
           result-encoding: string
-          script: await require('./scripts/state.js')({ github, context, core })
+          script: await require('./scripts/release/state.js')({ github, context, core })
     outputs:
       # Job Flags
       start: ${{ steps.state.outputs.start }}
@@ -68,10 +68,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Set up environment
         uses: ./.github/actions/setup
-      - run: bash scripts/git-user-config.sh
+      - run: bash scripts/release/git-user-config.sh
       - name: Create Release Candidate Branch
         id: start
-        run: bash scripts/start.sh
+        run: bash scripts/release/start.sh
         env:
           PACKAGE: ${{ github.event.inputs.package }}
       - name: Re-run workflow
@@ -98,7 +98,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Set up environment
         uses: ./.github/actions/setup
-      - run: bash scripts/git-user-config.sh
+      - run: bash scripts/release/git-user-config.sh
       - name: Create/Update PR
         id: changesets
         uses: changesets/action@v1
@@ -126,10 +126,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Set up environment
         uses: ./.github/actions/setup
-      - run: bash scripts/git-user-config.sh
+      - run: bash scripts/release/git-user-config.sh
       - name: Exit prerelease state
         if: needs.state.outputs.is_prerelease == 'true'
-        run: bash scripts/exit-prerelease.sh
+        run: bash scripts/release/exit-prerelease.sh
       - name: Re-run workflow
         uses: actions/github-script@v7
         with:
@@ -153,9 +153,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Set up environment
         uses: ./.github/actions/setup
-      - run: bash scripts/git-user-config.sh
+      - run: bash scripts/release/git-user-config.sh
       - name: Build the package
-        run: bash scripts/build.sh
+        run: bash scripts/release/build.sh
         env:
           REF_NAME: ${{ github.base_ref }}
       - name: Create temporary .npmrc
@@ -167,7 +167,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REF_NAME: ${{ github.base_ref }}
         with:
-          script: await require('./scripts/publish.js')({ github, context })
+          script: await require('./scripts/release/publish.js')({ github, context })
 
   merge:
     needs: [state, publish]
@@ -183,7 +183,7 @@ jobs:
           fetch-depth: 0 # All branches
       - name: Set up environment
         uses: ./.github/actions/setup
-      - run: bash scripts/git-user-config.sh
+      - run: bash scripts/release/git-user-config.sh
       - name: Create PR back to main
         uses: actions/github-script@v7
         with:
