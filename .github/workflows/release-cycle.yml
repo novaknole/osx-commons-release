@@ -10,7 +10,6 @@ on:
       package:
         type: choice
         description: Which package to release(NOTE:Used only when triggered from `main` branch)
-        required: ${{ github.ref == 'refs/heads/main' }}
         options: 
           - "contracts"
           - "configs"
