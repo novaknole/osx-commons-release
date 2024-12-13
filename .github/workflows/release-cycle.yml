@@ -9,7 +9,7 @@ on:
     inputs:
       package:
         type: choice
-        description: Which package to release(NOTE:Used only when triggered from `main` branch)
+        description: Which package to release(NOTE:Used only when triggered from `main` branch. When triggered from `release-*` branch, it grabs the package folder name from the branch name)
         options: 
           - "contracts"
           - "configs"
