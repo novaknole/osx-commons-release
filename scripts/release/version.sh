@@ -21,7 +21,6 @@ command="changeset version"
 for pair in $mapping; do
     key="${pair%%:*}"
     value="${pair#*:}"
-    script
 
     if [[ "$key" != "$package" ]]; then
         command+=" --ignore $organization/$value" 
