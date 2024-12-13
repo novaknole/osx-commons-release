@@ -27,4 +27,5 @@ for pair in $mapping; do
     fi
 done
 
+echo $command
 eval $command
