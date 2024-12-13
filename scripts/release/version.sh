@@ -7,7 +7,7 @@ set -euo pipefail
 organization=@glagh
 
 # Define the mapping as an associative array
-mapping="contracts:commons-contracts configs:commons-configs sdk:commons-sdk artifacts:dev-artifacts"
+mapping="contracts:commons-contracts configs:commons-configs sdk:commons-sdk"
 
 package="${REF_NAME##*-}"
 
