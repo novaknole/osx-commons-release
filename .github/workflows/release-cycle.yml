@@ -104,7 +104,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          version: yarn version
+          version: yarn run version
           # When a PR is merged to `release-*`, changesets/action uses `ref_name` which 
           # is `<pr_number>/merge` and not the source branch name. Such a PR causes 
           # changeset's new PR creation instead of updating the current one. 
