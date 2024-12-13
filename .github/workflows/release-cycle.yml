@@ -9,7 +9,7 @@ on:
     inputs:
       package:
         type: choice
-        description: Which package to release
+        description: Which package to release(Used only from `main`)
         options: 
           - "contracts"
           - "configs"
