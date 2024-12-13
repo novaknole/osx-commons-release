@@ -23,9 +23,10 @@ for pair in $mapping; do
     value="${pair#*:}"
 
     if [[ "$key" != "$package" ]]; then
-        command+=" --ignore $organization/$value" 
+        # command+=" --ignore $organization/$value" 
+        changeset version --ignore $organization/$value
     fi
 done
 
-echo $command
-eval $command
+# echo $command
+# eval $command
