@@ -6,8 +6,7 @@
   "workspaces": [
     "contracts",
     "configs",
-    "sdk",
-    "artifacts"
+    "sdk"
   ],
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
@@ -26,6 +25,9 @@
     "@changesets/release-utils": "^0.2.2"
   },
   "scripts": {
+    "version": "scripts/release/version.sh",
+    "release": "changeset publish",
+    "changeset": "changeset",
     "lint:configs:ts": "eslint --ext .js,.ts ./configs/",
     "lint:contracts:sol": "solhint --max-warnings 0 \"contracts/src/**/*.sol\"",
     "lint:contracts:ts": "eslint --ext .js,.ts ./contracts/",
