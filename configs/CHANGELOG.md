@@ -1,5 +1,11 @@
 # Aragon OSx Commons Configs
 
+## 0.7.0-alpha.3
+
+### Minor Changes
+
+- 1fe92ef: some more changes for another release candidate
+
 ## 0.7.0-alpha.2
 
 ### Minor Changes
