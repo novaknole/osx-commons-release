@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@glagh/commons-configs": "0.7.0-alpha.3",
+    "@glagh/commons-contracts": "1.4.0-alpha.6",
+    "@glagh/commons-sdk": "0.0.1-alpha.11"
+  },
+  "changesets": []
+}
