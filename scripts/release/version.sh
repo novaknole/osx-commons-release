@@ -16,12 +16,16 @@ echo $package
 
 echo "Looping through keys and values:"
 
+command="changeset version"
+
 for pair in $mapping; do
     key="${pair%%:*}"
     value="${pair#*:}"
+    script
 
     if [[ "$key" != "$package" ]]; then
-        changeset version --ignore $organization/$value
+        command+=" --ignore $organization/$value" 
     fi
 done
 
+eval $command
