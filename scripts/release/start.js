@@ -4,7 +4,7 @@ const fs = require('fs')
 
 const spawn = require("spawndamnit")
 
-const { organization, folderNameToPackageName } = require('./scripts/release/constants')
+const { organization, folderNameToPackageName } = require('./constants')
 
 module.exports = async ({ github, context, core }) => {
     const package = 'contracts'
