@@ -10,9 +10,9 @@ const { organization, folderNameToPackageName, runSpawn } = require('./helpers')
     // e.x contracts
     const package = refName.split('-')[1]
 
-    core.info(`Looping through keys and values`);
+    // core.info(`Looping through keys and values`);
 
-    let commandArgs = 'changeset version'
+    let commandArgs = ['changeset', 'version']
 
     const keys = Object.keys(folderNameToPackageName);
     for (let i = 0; i < keys.length; i++) {
@@ -20,11 +20,13 @@ const { organization, folderNameToPackageName, runSpawn } = require('./helpers')
         const value = folderNameToPackageName[key]
 
         if (keys[i] != package) {
-            commandArgs += ` --ignore ${organization}/${value}`
+            commandArgs.push('--ignore')
+            commandArgs.push(`${organization}/${value}`)
+            // commandArgs += ` --ignore ${organization}/${value}`
         }
     }
 
-    core.info(commandArgs)
+    // core.info(commandArgs)
 
-    runSpawn('npx', commandArgs)
+    await runSpawn('npx', commandArgs)
 })();
