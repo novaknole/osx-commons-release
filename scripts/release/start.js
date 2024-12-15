@@ -12,7 +12,7 @@ module.exports = async ({ github, context, core }) => {
         throw new Error("package not found");
     }
 
-    await exec("npx changeset status --output=temp.js")
+    await runSpawn("npx", ["changeset", "status", "--output=temp.js"])
 
     const contents = fs.readFileSync("temp.js", { encoding: 'utf8' })
     const releases = JSON.parse(contents).releases;
