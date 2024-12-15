@@ -6,5 +6,8 @@
     "@glagh/commons-contracts": "1.4.0",
     "@glagh/commons-sdk": "0.0.1"
   },
-  "changesets": []
+  "changesets": [
+    "heavy-lemons-prove",
+    "wild-swans-beam"
+  ]
 }
