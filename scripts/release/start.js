@@ -37,7 +37,7 @@ module.exports = async ({ github, context, core }) => {
         throw new Error("Problem When checking out branch")
     }
 
-    // // await exec('npx changeset pre enter alpha')
+    await exec('npx changeset pre enter alpha')
     await spawn("git", ["add", "."], spawnOptions);
     await spawn(
         "git",
