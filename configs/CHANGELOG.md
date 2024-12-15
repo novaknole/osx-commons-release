@@ -1,5 +1,12 @@
 # Aragon OSx Commons Configs
 
+## 0.8.0-alpha.0
+
+### Minor Changes
+
+- 4f78792: configs 1
+- 4f78792: configs 2
+
 ## 0.7.0
 
 ### Minor Changes
