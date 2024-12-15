@@ -13,26 +13,6 @@
     {
       "releases": [
         {
-          "name": "@glagh/commons-configs",
-          "type": "minor"
-        }
-      ],
-      "summary": "some more changes for another release candidate",
-      "id": "pink-trainers-laugh"
-    },
-    {
-      "releases": [
-        {
-          "name": "@glagh/commons-configs",
-          "type": "minor"
-        }
-      ],
-      "summary": "configs changed 1",
-      "id": "pretty-beers-cheer"
-    },
-    {
-      "releases": [
-        {
           "name": "@glagh/commons-sdk",
           "type": "minor"
         }
@@ -45,26 +25,16 @@
     {
       "name": "@glagh/commons-contracts",
       "type": "minor",
-      "oldVersion": "1.4.0-alpha.6",
+      "oldVersion": "1.4.0",
       "changesets": [
         "heavy-lemons-prove"
       ],
-      "newVersion": "1.4.0"
-    },
-    {
-      "name": "@glagh/commons-configs",
-      "type": "minor",
-      "oldVersion": "0.7.0-alpha.3",
-      "changesets": [
-        "pink-trainers-laugh",
-        "pretty-beers-cheer"
-      ],
-      "newVersion": "0.7.0"
+      "newVersion": "1.5.0"
     },
     {
       "name": "@glagh/commons-sdk",
       "type": "minor",
-      "oldVersion": "0.0.1-alpha.11",
+      "oldVersion": "0.0.1",
       "changesets": [
         "wild-swans-beam"
       ],
