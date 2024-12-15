@@ -3,12 +3,12 @@
     {
       "releases": [
         {
-          "name": "@glagh/commons-contracts",
+          "name": "@glagh/commons-configs",
           "type": "minor"
         }
       ],
-      "summary": "contracts changed",
-      "id": "heavy-lemons-prove"
+      "summary": "configs 1",
+      "id": "bright-knives-move"
     },
     {
       "releases": [
@@ -17,18 +17,8 @@
           "type": "minor"
         }
       ],
-      "summary": "some more changes for another release candidate",
-      "id": "pink-trainers-laugh"
-    },
-    {
-      "releases": [
-        {
-          "name": "@glagh/commons-configs",
-          "type": "minor"
-        }
-      ],
-      "summary": "configs changed 1",
-      "id": "pretty-beers-cheer"
+      "summary": "configs 2",
+      "id": "plenty-eagles-help"
     },
     {
       "releases": [
@@ -37,38 +27,48 @@
           "type": "minor"
         }
       ],
-      "summary": "sdk changes",
-      "id": "wild-swans-beam"
+      "summary": "sdk 1",
+      "id": "rare-pumpkins-sip"
+    },
+    {
+      "releases": [
+        {
+          "name": "@glagh/commons-contracts",
+          "type": "minor"
+        }
+      ],
+      "summary": "contracts 1",
+      "id": "strong-ducks-sparkle"
     }
   ],
   "releases": [
     {
-      "name": "@glagh/commons-contracts",
-      "type": "minor",
-      "oldVersion": "1.4.0-alpha.6",
-      "changesets": [
-        "heavy-lemons-prove"
-      ],
-      "newVersion": "1.4.0"
-    },
-    {
       "name": "@glagh/commons-configs",
       "type": "minor",
-      "oldVersion": "0.7.0-alpha.3",
+      "oldVersion": "0.7.0",
       "changesets": [
-        "pink-trainers-laugh",
-        "pretty-beers-cheer"
+        "bright-knives-move",
+        "plenty-eagles-help"
       ],
-      "newVersion": "0.7.0"
+      "newVersion": "0.8.0"
     },
     {
       "name": "@glagh/commons-sdk",
       "type": "minor",
-      "oldVersion": "0.0.1-alpha.11",
+      "oldVersion": "0.0.1",
       "changesets": [
-        "wild-swans-beam"
+        "rare-pumpkins-sip"
       ],
       "newVersion": "0.1.0"
+    },
+    {
+      "name": "@glagh/commons-contracts",
+      "type": "minor",
+      "oldVersion": "1.4.0",
+      "changesets": [
+        "strong-ducks-sparkle"
+      ],
+      "newVersion": "1.5.0"
     }
   ]
 }
