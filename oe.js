@@ -45,7 +45,7 @@ async function run() {
     await spawn("git", ["add", "."], { cwd: undefined });
     await spawn(
         "git",
-        ["commit", "-m", "Start release candidate", "--allow-empty"],
+        ["commit", "-m", "Start release candidate"],
         { cwd: undefined, stdio: 'inherit' }
     );
 
