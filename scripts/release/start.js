@@ -6,6 +6,16 @@ const spawn = require("spawndamnit")
 
 const { organization, folderNameToPackageName } = require('./constants')
 
+async function runSpawn(command, args) {
+    // log the output of the command in terminal
+    const spawnOptions = { stdio: 'inherit' }
+
+    let result = await spawn(command, args, spawnOptions)
+    if (result.code !== 0) {
+        throw new Error(`${args.join(' ')} failed`)
+    }
+}
+
 module.exports = async ({ github, context, core }) => {
     const package = 'contracts'
     const packageName = folderNameToPackageName[package];
@@ -30,30 +40,11 @@ module.exports = async ({ github, context, core }) => {
 
     const releaseBranch = `release-${package}-v${parts[0]}.${parts[1]}`
 
-    const spawnOptions = { stdio: 'inherit' }
-
-    const checkoutCommand = await spawn('git', ['checkout', '-b', releaseBranch], spawnOptions)
-    if (checkoutCommand.code !== 0) {
-        throw new Error("Problem When checking out branch")
-    }
-
-    await exec('npx changeset pre enter alpha')
-    await spawn("git", ["add", "."], spawnOptions);
-    await spawn(
-        "git",
-        ["commit", "-m", "Start release candidate"],
-        spawnOptions
-    );
-
-    const pushCommand = await spawn(
-        "git",
-        ["push", "origin", releaseBranch],
-        spawnOptions
-    );
-
-    if (pushCommand.code !== 0) {
-        throw new Error(`Cant push to the ${releaseBranch}`)
-    }
+    await runSpawn('git', ['checkout', '-b', releaseBranch]);
+    await runSpawn('npx', ['changeset', 'pre', 'enter', 'alpha'])
+    await runSpawn('git', ["add", "."])
+    await runSpawn('git', ["commit", "-m", "Start release candidate"])
+    await runSpawn('git', ["push", "origin", releaseBranch])
 
     core.setOutput('branch', releaseBranch)
 }
