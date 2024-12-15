@@ -35,4 +35,6 @@ module.exports = async ({ github, context, core }) => {
     await runSpawn('git', ["push", "origin", releaseBranch])
 
     core.setOutput('branch', releaseBranch)
+
+    fs.unlinkSync("temp.js")
 }
