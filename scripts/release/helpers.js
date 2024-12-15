@@ -15,7 +15,8 @@ module.exports = {
     organization: '@glagh',
     folderNameToPackageName: {
         'contracts': 'commons-contracts',
-        'configs': 'commons-sdk'
+        'configs': 'commons-configs',
+        'sdk': 'commons-sdk'
     },
     runSpawn
 }
