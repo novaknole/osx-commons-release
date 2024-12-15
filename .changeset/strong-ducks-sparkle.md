@@ -2,4 +2,4 @@
 '@glagh/commons-contracts': minor
 ---
 
-contracts changed
+contracts 1

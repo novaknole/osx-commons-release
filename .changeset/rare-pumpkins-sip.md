@@ -2,4 +2,4 @@
 '@glagh/commons-sdk': minor
 ---
 
-sdk changes
+sdk 1
