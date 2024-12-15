@@ -73,7 +73,7 @@ jobs:
         uses: actions/github-script@v7
         id: start
         with:
-          script: await require('./scripts/release/start.js')({ github, context })
+          script: await require('./scripts/release/start.js')({ github, context, core })
         env:
           PACKAGE: ${{ github.event.inputs.package }}
       - name: Re-run workflow
