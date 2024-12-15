@@ -2,22 +2,10 @@ const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 const fs = require('fs')
 
-const spawn = require("spawndamnit")
-
-const { organization, folderNameToPackageName } = require('./constants')
-
-async function runSpawn(command, args) {
-    // log the output of the command in terminal
-    const spawnOptions = { stdio: 'inherit' }
-
-    let result = await spawn(command, args, spawnOptions)
-    if (result.code !== 0) {
-        throw new Error(`${args.join(' ')} failed`)
-    }
-}
+const { organization, folderNameToPackageName, runSpawn } = require('./helpers')
 
 module.exports = async ({ github, context, core }) => {
-    const package = 'contracts'
+    const package = process.env.PACKAGE;
     const packageName = folderNameToPackageName[package];
 
     if (packageName === undefined) {

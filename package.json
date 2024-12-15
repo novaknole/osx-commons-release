@@ -25,7 +25,7 @@
     "@changesets/release-utils": "^0.2.2"
   },
   "scripts": {
-    "version": "scripts/release/version.sh",
+    "version": "node scripts/release/version.js",
     "release": "changeset publish",
     "changeset": "changeset",
     "lint:configs:ts": "eslint --ext .js,.ts ./configs/",
