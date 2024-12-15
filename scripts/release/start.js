@@ -17,6 +17,8 @@ module.exports = async ({ github, context, core }) => {
     const contents = fs.readFileSync("temp.js", { encoding: 'utf8' })
     const releases = JSON.parse(contents).releases;
 
+    fs.unlinkSync("temp.js")
+
     const release = releases.filter(item => item.name == `${organization}/${packageName}`)
 
     /// Defensive assertion. SHOULD NOT BE REACHED
@@ -36,5 +38,4 @@ module.exports = async ({ github, context, core }) => {
 
     core.setOutput('branch', releaseBranch)
 
-    fs.unlinkSync("temp.js")
 }
