@@ -6,11 +6,11 @@ const { organization, folderNameToPackageName, runSpawn } = require('./helpers')
 
 (async () => {
     // e.x release-contracts-v1.5
-    const refName = `release-contracts-v1.5`
+    const refName = process.env.REF_NAME;
     // e.x contracts
     const package = refName.split('-')[1]
 
-    // core.info(`Looping through keys and values`);
+    console.log(`Looping through keys and values`);
 
     let commandArgs = ['changeset', 'version']
 
@@ -25,8 +25,6 @@ const { organization, folderNameToPackageName, runSpawn } = require('./helpers')
             // commandArgs += ` --ignore ${organization}/${value}`
         }
     }
-
-    // core.info(commandArgs)
 
     await runSpawn('npx', commandArgs)
 })();
